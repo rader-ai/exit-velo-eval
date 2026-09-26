@@ -48,13 +48,20 @@ This engine would rather tell you nothing than tell you something wrong.
   locking onto the bat or background produced a believable 82. The confidence gate
   (`ev-confidence`) throws those out instead of showing them.
 - **Trend tracker, not a radar gun.** The target is within a few mph of a radar, off a tee, in good
-  light. One huge reading on a Tuesday tells you less than a month of steady ones, so the stats
+  light. No reading has been checked against a radar yet,
+  and we say so until one has. One huge reading on a Tuesday tells you less than a month of steady ones, so the stats
   are built around consistency and guarded personal records. Some of those thresholds are still
   estimates waiting on radar-paired data; the code says which.
 - **Distance is projected, and says so.** It's a physics model on the measured exit velo and launch angle
   (sea-level air, no wind), not a tape measure.
 - **Age-aware norms, as ranges.** "Good for a 12-year-old" comes back as a coarse band, flagged
   when it's an estimate (every baseball band is), and tee-ball ages get no band at all, because there's no credible data to build one on.
+
+## The story
+
+Three real test sessions that measured zero swings. A park test that read as low as 4 mph, plus a
+believable 82 that was really the bat. Two audits that found our own bugs. [Read how this engine got built](STORY.md), mistakes
+included.
 
 ## How it works, in plain terms
 

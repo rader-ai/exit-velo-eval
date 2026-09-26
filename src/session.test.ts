@@ -141,7 +141,7 @@ test('confidentBest: a noisy low-conf read cannot crown the best', () => {
   assert.equal(confidentBest([{ mph: 40, angle: 20, distance: 100, conf: 'low' as const }]), 40);
 });
 
-/* ------------------------------- 2026-07-02 audit fixes (Fable 5) ------- */
+/* ------------------------------------- 2026-07-02 audit fixes ------- */
 
 import { projectedDistance, evCeilingForCohort } from './session.ts';
 
